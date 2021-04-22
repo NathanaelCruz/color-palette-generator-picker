@@ -1,0 +1,146 @@
+:root {
+    --purple: #7E6CCA;
+    --purple-hover: #897bc4;
+    --dark-blue: #0C1226;
+    --ice-white: #E8ECF3;
+}
+
+pre {
+    display: none;
+}
+
+body {
+    background-color: var(--ice-white);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 2rem 1rem;
+    font-family: 'Mulish';
+}
+
+.header,
+.header__title,
+.main,
+.main__alert,
+.main__button {
+    width: 100%;
+}
+
+.header__title {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 1rem 0
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main__section {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    grid-gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    height: 340px;
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .3rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    -webkit-box-shadow: -1px 4px 15px -2px rgb(161 181 193 / 72%);
+    box-shadow: -1px 4px 15px -2px rgb(161 181 193 / 72%);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.card:hover .card__title {
+    font-weight: bold;
+}
+
+.card__color {
+    height: 100%;
+    background: red;
+    width: 100%;
+}
+
+.card__title {
+    color: var(--dark-blue);
+    font-weight: 400;
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+    transition: 1s;
+}
+
+.main__button {
+    padding: 1rem;
+    border: 1px solid var(--purple);
+    color: white;
+    border-radius: .3rem;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1rem;
+    background-color: var(--purple);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.main__button:hover {
+    background-color: var(--purple-hover);
+    transition: 1s;
+}
+
+.main__alert--copy {
+    padding: 0;
+    background-color: white;
+    color: var(--dark-blue);
+    width: auto;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 1rem 0;
+    padding: .8rem 1rem;
+}
+
+.main__alert--space {
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--dark-blue);
+}
+
+.main__alert--space,
+.main__alert--copy {
+    line-height: 1.5;
+}
+
+@media(min-width: 663px) {
+    .card {
+        width: 200px;
+    }
+    .main__button {
+        width: 450px;
+    }
+}
