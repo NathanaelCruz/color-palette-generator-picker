@@ -15,7 +15,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     height: 100vh;
-    padding: 2rem 1rem;
+    padding: 1rem;
     font-family: 'Mulish';
 }
 
@@ -44,7 +44,7 @@ body {
 
 .main__section {
     width: 100%;
-    margin: 2rem 0;
+    margin: 1rem 0;
     display: flex;
     grid-gap: 1rem;
     flex-wrap: wrap;
@@ -68,13 +68,8 @@ body {
 
 .card:hover {
     transition: 1s;
-    transform: scale(1.1);
     -webkit-box-shadow: -1px 4px 15px -2px rgb(161 181 193 / 72%);
     box-shadow: -1px 4px 15px -2px rgb(161 181 193 / 72%);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
 }
 
 .card:hover .card__title {
@@ -126,7 +121,7 @@ body {
 
 .main__alert--space {
     text-align: center;
-    margin: 1rem 0;
+    margin: .5rem 0;
     color: var(--dark-blue);
 }
 
