@@ -19,7 +19,7 @@ function createCardsElements() {
     card.appendChild(cardTitle)
     cardContainer.appendChild(card)
 
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 0; i <= 3; i++) {
         cardContainer.insertAdjacentHTML('beforeend', card.outerHTML)
     }
     insertColorPalettesCards()
@@ -36,7 +36,7 @@ function insertColorPalettesCards() {
 }
 
 function controllPalettes() {
-    const buttonGenerate = document.querySelector('.main__button')
+    const buttonGenerate = document.querySelector('[button-generate-palletes]')
     buttonGenerate.onclick = () => insertColorPalettesCards()
     document.onkeyup = (e) => { if (e.which == 32 || e.keyCode == 32) insertColorPalettesCards() }
 }
@@ -46,3 +46,9 @@ function generateColorPalettesCards() {
 }
 
 generateColorPalettesCards()
+let colorPaletteHex = document.querySelectorAll('.card__title')
+const selection = window.getSelection()
+const range = document.createRange()
+range.selectNodeContents(colorPaletteHex)
+selection.removeAllRanges()
+selection.addRange(range)
