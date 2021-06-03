@@ -1,8 +1,26 @@
 :root {
     --purple: #7E6CCA;
-    --purple-hover: #897bc4;
+    --purple-hover: #5a4d9b;
     --dark-blue: #0C1226;
     --ice-white: #E8ECF3;
+    --red: #E32A22;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: var(--ice-white);
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: var(--purple);
+    border-radius: 3rem;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--purple-hover);
 }
 
 pre {
@@ -103,7 +121,9 @@ body {
     cursor: pointer;
 }
 
-.main__button:hover {
+.main__button:hover,
+.main__button:active,
+.main__button:focus {
     background-color: var(--purple-hover);
     transition: 1s;
 }
@@ -128,6 +148,29 @@ body {
 .main__alert--space,
 .main__alert--copy {
     line-height: 1.5;
+}
+
+.alert {
+    font-weight: normal;
+    color: var(--ice-white);
+    border-radius: 2rem;
+    min-width: 300px;
+    max-width: 600px;
+    width: 100%;
+    padding: .5rem 1rem;
+}
+
+.alert em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.alert .alert--error {
+    background-color: var(--red);
+}
+
+.alert .alert--sucess {
+    background-color: var(--dark-blue);
 }
 
 @media(min-width: 663px) {
