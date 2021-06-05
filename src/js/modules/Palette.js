@@ -41,13 +41,10 @@ export default class Palette {
                     window.getSelection().removeAllRanges()
                     window.getSelection().addRange(range)
                     document.execCommand("copy")
-                    let copyColorAlertCreateTag = ElementTags.createElementTag('strong', 'copy')
-                    copyColorAlertCreateTag.innerHTML = `A cor ${color.innerText} foi copiada para a sua área de transferência!`
+                    let copyColorAlertCreateTag = ElementTags.createElementTag('em', 'copy')
+                    copyColorAlertCreateTag.innerHTML = `A cor <strong>${color.innerText}</strong> foi copiada para a sua área de transferência!`
                     header.appendChild(copyColorAlertCreateTag)
-                    setTimeout(() => {
-                        copyColorAlertCreateTag.remove()
-                    }, 5000)
-
+                    ElementTags.removeElement(copyColorAlertCreateTag)
                 })
             })
         }, 1000)

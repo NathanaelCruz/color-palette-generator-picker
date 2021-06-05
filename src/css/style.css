@@ -56,13 +56,14 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
+    position: relative;
 }
 
 .header__title {
     font-size: 1.8rem;
     text-align: center;
     font-weight: bold;
-    margin: 1rem 0
+    margin: 2rem 0
 }
 
 .main {
@@ -75,7 +76,7 @@ body {
 
 .main__section {
     width: 100%;
-    margin: 1rem 0;
+    margin: 0 0 1rem;
     display: flex;
     grid-gap: 1rem;
     flex-wrap: wrap;
@@ -86,6 +87,8 @@ body {
     height: 340px;
     background-color: white;
     width: 100%;
+    max-width: 220px;
+    min-width: 200px;
     padding: 1rem;
     border-radius: .3rem;
     box-sizing: border-box;
@@ -132,6 +135,10 @@ body {
     background-color: var(--purple);
     transition: 1s;
     cursor: pointer;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 
 .main__button:hover,
@@ -139,6 +146,10 @@ body {
 .main__button:focus {
     background-color: var(--purple-hover);
     transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 
 .main__alert--copy {
@@ -191,9 +202,15 @@ body {
     width: 100%;
     text-align: center;
     line-height: 1.8;
-    animation: copyAlert 6s;
+    animation: copyAlert 4s;
     animation-iteration-count: infinite;
-    -webkit-animation: copyAlert 6s;
+    -webkit-animation: copyAlert 4s;
+    position: absolute;
+    top: -1.5rem;
+}
+
+.copy strong {
+    font-weight: bold;
 }
 
 @keyframes copyAlert {
@@ -202,20 +219,13 @@ body {
     }
     50% {
         transform: translate(0, 5px);
-        -webkit-transform: translate(0, 5px);
-        -moz-transform: translate(0, 5px);
-        -ms-transform: translate(0, 5px);
-        -o-transform: translate(0, 5px);
     }
-    to {
+    100% {
         transform: translate(0, -180px);
     }
 }
 
 @media(min-width: 663px) {
-    .card {
-        width: 200px;
-    }
     .main__button {
         width: 450px;
     }
