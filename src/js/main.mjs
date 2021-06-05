@@ -1,6 +1,6 @@
-import Card from './modules/Card.js'
+import Palette from './modules/Palette.js'
 
-let card = new Card()
+let palette = new Palette()
 window.onload = () => {
-    card.createCardsElements()
+    palette.colorPaletteEvents()
 }

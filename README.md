@@ -11,7 +11,7 @@ O objetivo geral, é conseguir construir as funcionalidades apresentadas no UI a
 # Tecnologia
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (ESmodule)
 
 # Agradecimentos
 Antes de mais nada, agradecer ao [UI Design Daily](https://www.uidesigndaily.com/) pelos lindos designs que oferecem todo o UI para ser reutilizado ou usado para diversos fins de maneira gratuita. É um projeto muito lindo e que ajuda imensamente diversas comunidades rodeadas no mundo de produtos. Ao [Alligator](https://alligator.io/js/copying-to-clipboard/) porque me ajudou a entender melhor a enormidade de APIs e conceitos abstraídos que Javascript possui. Isso claramente justifica todas as razões de ser uma linguagem que domina o ambiente Web atualmente.
