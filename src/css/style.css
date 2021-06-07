@@ -34,6 +34,7 @@ pre {
 
 body {
     background-color: var(--ice-white);
+    color: var(--dark-blue);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -55,8 +56,37 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
-    position: relative;
+}
+
+@keyframes copyAlert {
+    from {
+        transform: translate(0, -180px);
+    }
+    50% {
+        transform: translate(0, 5px);
+    }
+    100% {
+        transform: translate(0, -180px);
+    }
+}
+
+@media(min-width: 663px) {
+    .main__button {
+        width: 450px;
+    }
+}
+
+@media (min-width: 432px) {
+    .copy {
+        top: 0.5rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .header__title--saved {
+        padding: 0 1rem;
+        position: relative;
+    }
 }
 
 .header__title {
@@ -199,14 +229,15 @@ body {
     background-color: var(--dark-blue);
     color: var(--ice-white);
     border-radius: 3rem;
-    width: 100%;
+    width: auto;
     text-align: center;
     line-height: 1.8;
     animation: copyAlert 4s;
     animation-iteration-count: infinite;
-    -webkit-animation: copyAlert 4s;
-    position: absolute;
-    top: -1.5rem;
+    position: fixed;
+    top: 1rem;
+    font-size: 0.9rem;
+    margin: 0 1rem;
 }
 
 .copy strong {
@@ -229,7 +260,16 @@ body {
     .main__button {
         width: 450px;
     }
+}
+
+@media(min-width: 432px) {
     .copy {
-        width: auto;
+        top: 0.5rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .header__title--saved {
+        justify-content: flex-start;
     }
 }

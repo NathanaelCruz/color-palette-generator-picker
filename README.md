@@ -7,6 +7,7 @@ O objetivo geral, é conseguir construir as funcionalidades apresentadas no UI a
 # Funcionalidades
 - Gerar nova paleta de cores ao clicar no botão para gerar paleta ou pressionando a tecla Espaço.
 - Copiar o Hexadecimal correspondente a cor ao clicar no card. 
+- Ao clicar no card, será alertado se copiou a cor que deseja.
 # Tecnologia
 - HTML5
 - CSS3
