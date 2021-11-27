@@ -106,11 +106,13 @@ body {
 
 .main__section {
     width: 100%;
+    max-width: 1200px;
     margin: 0 0 1rem;
     display: flex;
     grid-gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
 }
 
 .card {
@@ -152,6 +154,39 @@ body {
     margin: 1rem 0;
     text-align: center;
     transition: 1s;
+}
+
+.main__button--save-palette{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    position: fixed;
+    right: 2rem;
+    bottom: 1.5rem;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border: 1px solid var(--purple);
+    outline: none;
+    box-shadow: 0 3px 5px 1px rgba(0,0,0,0.4);
+    color: white;
+    background-color: var(--purple);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+
+.main__button--save-palette:hover,
+.main__button--save-palette:active,
+.main__button--save-palette:focus{
+    transform: scale(1.05);
+    background-color: var(--purple-hover);
 }
 
 .main__button {
