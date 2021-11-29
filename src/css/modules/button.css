@@ -1,0 +1,42 @@
+.main__button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: .3rem;
+    font-weight: 700;
+    font-size: 1rem;
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+.main__button--save-palette{
+    width: 4rem;
+    height: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    position: fixed;
+    right: 2rem;
+    bottom: 1.5rem;
+    border-radius: 50%;
+    outline: none;
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+@media(min-width: 663px) {
+    .main__button {
+        width: 450px;
+    }
+}

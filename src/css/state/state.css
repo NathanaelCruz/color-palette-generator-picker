@@ -1,0 +1,67 @@
+.main__button--save-palette:hover,
+.main__button--save-palette:active,
+.main__button--save-palette:focus{
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+.main__button:hover,
+.main__button:active,
+.main__button:focus {
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.main__alert--save.isOpen,
+.main__alert--copy.isOpen{
+    visibility: visible;
+    opacity: 1;
+    font-size: 1rem;
+}
+
+.main__alert--save.isOpen{
+    width: 200px;
+}
+
+.main__alert--copy.isOpen{
+    width: 400px;
+    top: 3rem;
+}
+
+.palette__color-item:hover{
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+@-webkit-keyframes copyAlert {
+    from {
+        -webkit-transform: translate(0, -180px);
+                transform: translate(0, -180px);
+    }
+    50% {
+        -webkit-transform: translate(0, 5px);
+                transform: translate(0, 5px);
+    }
+    100% {
+        -webkit-transform: translate(0, -180px);
+                transform: translate(0, -180px);
+    }
+}
+
+@keyframes copyAlert {
+    from {
+        -webkit-transform: translate(0, -180px);
+                transform: translate(0, -180px);
+    }
+    50% {
+        -webkit-transform: translate(0, 5px);
+                transform: translate(0, 5px);
+    }
+    100% {
+        -webkit-transform: translate(0, -180px);
+                transform: translate(0, -180px);
+    }
+}

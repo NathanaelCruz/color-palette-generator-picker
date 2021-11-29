@@ -1,0 +1,153 @@
+:root {
+    --purple: #7E6CCA;
+    --purple-hover: #5a4d9b;
+    --dark-blue: #0C1226;
+    --ice-white: #E8ECF3;
+    --red: #E32A22;
+    --white: #fff;
+    --whatsapp-green: #25D366;
+}
+
+::-moz-selection {
+    background-color: var(--purple);
+    color: var(--ice-white);
+}
+
+::selection {
+    background-color: var(--purple);
+    color: var(--ice-white);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--ice-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--purple);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--purple-hover);
+}
+
+body {
+    background-color: var(--ice-white);
+    color: var(--dark-blue);
+}
+
+.header__link{
+    color: var(--dark-blue);
+}
+
+.header__link:hover{
+    color: var(--purple-hover);
+}
+
+
+.main__button--save-palette:hover,
+.main__button--save-palette:active,
+.main__button--save-palette:focus{
+    background-color: var(--purple-hover);
+}
+
+.main__button:hover,
+.main__button:active,
+.main__button:focus {
+    background-color: var(--purple-hover);
+}
+
+.main__button--save-palette{
+    border: 1px solid var(--purple);
+    -webkit-box-shadow: 0 3px 5px 1px rgba(0,0,0,0.4);
+            box-shadow: 0 3px 5px 1px rgba(0,0,0,0.4);
+    background-color: var(--purple);
+    color: var(--ice-white);
+}
+
+.main__button {
+    border: 1px solid var(--purple);
+    color: var(--white);
+    background-color: var(--purple);
+}
+
+.card {
+    background-color: var(--white);
+}
+
+.card:hover {
+    -webkit-box-shadow: -1px 4px 15px -2px rgb(161 181 193 / 72%);
+            box-shadow: -1px 4px 15px -2px rgb(161 181 193 / 72%);
+}
+
+.card__title {
+    color: var(--dark-blue);
+}
+
+.main__alert--copy {
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
+
+.main__alert--space {
+    color: var(--dark-blue);
+}
+
+.alert {
+    color: var(--ice-white);
+}
+
+.alert .alert--sucess {
+    background-color: var(--dark-blue);
+}
+
+.copy {
+    background-color: var(--dark-blue);
+    color: var(--ice-white);
+}
+
+.main__alert--save,
+.main__alert--copy{
+    color: var(--ice-white);
+    background-color: var(--purple);
+    -webkit-box-shadow: 0 4px 4px 1px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 4px 1px rgba(0,0,0,0.3);
+}
+
+.list-palettes__palette{
+    background-color: rgb(221, 218, 218);
+}
+
+.whatsapp__link{
+    background-color: var(--whatsapp-green);
+}
+
+.palette__color-write{
+    color: var(--dark-blue);
+}
+
+.palette__copy{
+    background-color: var(--purple);
+    color: var(--ice-white);
+}
+
+.palette__copy:hover{
+    background-color: var(--purple-hover);
+}
+
+.no-colors__link:hover{
+    background-color: var(--purple-hover);
+}
+
+.no-colors__link{
+    background-color: var(--purple);
+    color: var(--ice-white);
+}
+
+.card__title {
+    color: var(--dark-blue);
+}
+
+.no-colors__link{
+    background-color: var(--purple);
+    color: var(--ice-white);
+}
