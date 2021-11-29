@@ -45,13 +45,15 @@ const activeCopyPalette = () => {
 
     palettes.forEach((palette, index) => {
         const colorsContainer = palette.querySelectorAll(".palette__colors .palette__color-item")
-        const buttonCopyPalette = palette.querySelector(".palette__copy")
+        const buttonCopyPalette = palette.querySelectorAll(".palette__copy")
         const colors = Array.prototype.slice.call(colorsContainer).map((color, index) => {
             return color.getAttribute("data-color")
         })
 
-        buttonCopyPalette.addEventListener("click", () => {
-            saveClipBoard(colors.join(", "), `Paleta das cores ${colors.join(", ")} copiada com sucesso!`)
+        buttonCopyPalette.forEach((buttonCopy, index) => {
+            buttonCopy.addEventListener("click", () => {
+                saveClipBoard(colors.join(", "), `Paleta das cores ${colors.join(", ")} copiada com sucesso!`)
+            })
         })
     })
 }
