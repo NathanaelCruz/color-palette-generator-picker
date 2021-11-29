@@ -33,6 +33,7 @@
     -o-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
     cursor: pointer;
+    z-index: 99;
 }
 
 @media(min-width: 663px) {
