@@ -4,9 +4,8 @@ import { loadStorageFunctionsInPalettesPage, loadStorageFunctionsInHome } from '
 let palette = new Palette()
 window.onload = () => {
     const route = window.location.pathname
-
     switch (route) {
-        case "list-colors.html":
+        case "/list-colors.html":
             loadStorageFunctionsInPalettesPage()
             break;
     
