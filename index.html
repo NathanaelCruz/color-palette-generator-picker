@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="src/image/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet"> ,
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="src/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerador de Paleta de Cores</title>
-</head>
+    <link rel="shortcut icon" href="src/image/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+      integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
         <h1 class="header__title">Gerador de paleta de cores </h1>
     </header>
@@ -25,7 +32,21 @@
         <button class="main__button" button-generate-palletes>Gerar paleta</button>
         <strong class="main__alert main__alert--space">Ou simplesmente pressione a “Barra de espaço” para gerar novas paletas.</strong>
         <em class="main__alert main__alert--copy">Clique no cartão para copiar uma cor individual </em>
+      <h1 class="header__title">Gerador de paleta de cores</h1>
+    </header>
+    <main class="main">
+      <div class="main__section" color-palette-generator></div>
+      <button class="main__button" button-generate-palletes>
+        Gerar paleta
+      </button>
+      <p class="main__alert main__alert--space">
+        Ou simplesmente pressione a <strong>“Barra de espaço”</strong> para
+        gerar novas paletas.
+      </p>
+      <em class="main__alert main__alert--copy"
+        >Clique no cartão para copiar uma cor individual</em
+      >
     </main>
-</body>
-
+    <script type="module" src="src/js/main.mjs"></script>
+  </body>
 </html>

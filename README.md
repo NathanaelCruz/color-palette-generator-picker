@@ -1,5 +1,5 @@
 # Color Palette Generator Picker
-Um simples gerador de cores em formato de cards, onde são 5 cores aleatórios exibindo em um pequeno quadro a cor de background e abaixo, o hexadecimal que a corresponde.
+Um simples gerador de cores em formato de cards, onde são 5 cores aleatórias exibidas em um pequeno quadro a cor de background e abaixo, o hexadecimal que a corresponde.
 
 # Objetivo
 O objetivo geral, é conseguir construir as funcionalidades apresentadas no UI a fim de aperfeiçoar a proficiência em Javascript de maneira mais simples e organizada o possível seguindo os conhecimentos que tenho até hoje.
